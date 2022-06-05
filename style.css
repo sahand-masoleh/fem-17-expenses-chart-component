@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+@import url(./styles/mixes.css);
+@import url(./styles/balance.css);
+@import url(./styles/spending.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "DM Sans", sans-serif;
+}
+
+:root {
+	/* ### primary */
+	--p-soft-red: hsl(10, 79%, 65%);
+	--p-cyan: hsl(186, 34%, 60%);
+
+	/* ### neutral */
+	--n-dark-brown: hsl(25, 47%, 15%);
+	--n-medium-brown: hsl(28, 10%, 53%);
+	--n-cream: hsl(27, 66%, 92%);
+	--n-very-pale-orange: hsl(33, 100%, 98%);
+
+	font-size: 18px;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	grid-template-rows: 1fr auto;
+	background-color: var(--n-cream);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 1em;
+}
+
+/* || FOOTER */
+
+footer {
+	font-size: 11px;
+	text-align: center;
+}
+footer a {
+	color: hsl(228, 45%, 44%);
+}

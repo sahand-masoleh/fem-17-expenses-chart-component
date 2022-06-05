@@ -1,0 +1,9 @@
+.balance {
+	background-color: var(--p-soft-red);
+	justify-content: space-between;
+}
+
+.balance__logo {
+	width: 4em;
+	height: 4em;
+}

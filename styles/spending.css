@@ -1,0 +1,49 @@
+.spending {
+	background-color: white;
+	flex-direction: column;
+}
+
+.spending__title {
+	font-size: 1.8em;
+}
+
+.spending__hr {
+	border-color: var(--n-very-pale-orange);
+}
+
+/* || SPENDING CHART */
+
+.spending__chart {
+	display: flex;
+	align-content: stretch;
+	height: 10em;
+	justify-content: stretch;
+	gap: 0.5rem;
+}
+
+.spending__bar-container {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.spending__bar {
+	background-color: var(--p-soft-red);
+	border-radius: 0.2rem;
+	width: 100%;
+}
+
+.spending__bar--heighest {
+	background-color: var(--p-cyan);
+}
+
+/* || SPENDING DETAILS */
+
+.spending__details {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}

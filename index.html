@@ -11,34 +11,27 @@
 
 <body>
 
-  <main>
-    <div class="card balance">
+  <main id="test">
+    <div class="card card--dark balance">
       <div class="txt-clm">
-        <p class="txt-clm__scn">My balance</p>
-        <p class="txt-clm__prm">$921.48</p>
+        <p class="txt-clm__scn txt-clm__scn--dark">My balance</p>
+        <p class="txt-clm__prm txt-clm__prm--dark">$921.48</p>
       </div>
       <img src="images/logo.svg" alt="logo" class="balance__logo">
     </div>
-    <div class="card spending">
+    <div class="card card--light spending">
       <h1 class="spending__title">Spending - Last 7 days</h1>
       <div class="spending__chart">
-        mon
-        tue
-        wed
-        thu
-        fri
-        sat
-        sun
       </div>
-      <hr />
+      <hr class="spending__hr" />
       <div class="spending__details">
         <div class="txt-clm">
-          <p class="txt-clm__scn">Total this month</p>
+          <p class="txt-clm__scn txt-clm__scn">Total this month</p>
           <p class="txt-clm__prm">$478.33</p>
         </div>
-        <div class="txt-clm">
-          <p class="txt-clm__prm">+2.4%</p>
-          <p class="txt-clm__scn">from last month</p>
+        <div class="txt-clm txt-clm--right">
+          <p class="txt-clm__prm txt-clm__prm--small">+2.4%</p>
+          <p class="txt-clm__scn txt-clm__scn">from last month</p>
         </div>
       </div>
     </div>
@@ -48,6 +41,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#" target="_blank">Sahand Masoleh</a>.
   </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>

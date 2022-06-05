@@ -1,0 +1,40 @@
+.card {
+	padding: 1.5em;
+	border-radius: 0.5em;
+	display: flex;
+	font-size: 0.8rem;
+	gap: 1em;
+	color: var(--n-dark-brown);
+}
+
+.card--dark {
+	color: white;
+}
+
+/* || TEXT COLUMN */
+
+.txt-clm {
+	display: flex;
+	flex-direction: column;
+}
+
+.txt-clm--right {
+	align-items: flex-end;
+}
+
+.txt-clm__prm {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.txt-clm__scn {
+	color: var(--n-medium-brown);
+}
+
+.txt-clm__scn--dark {
+	color: var(--n-cream);
+}
+
+.txt-clm__prm--small {
+	font-size: 1em;
+}
