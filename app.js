@@ -20,11 +20,6 @@ function drawBars(data, chart) {
 		barContainer.classList.add("spending__bar-container");
 		chart.appendChild(barContainer);
 
-		const amount = document.createElement("div");
-		amount.classList.add("spending__amount");
-		amount.innerText = `${entry.amount}`;
-		barContainer.appendChild(amount);
-
 		const bar = document.createElement("div");
 		bar.classList.add("spending__bar");
 		if (entry.heighest) {
@@ -33,10 +28,15 @@ function drawBars(data, chart) {
 		bar.style.height = `${(entry.amount * 100) / heighest}%`;
 		barContainer.appendChild(bar);
 
+		const amount = document.createElement("div");
+		amount.classList.add("spending__amount");
+		amount.innerText = `${entry.amount}`;
+		bar.appendChild(amount);
+
 		const day = document.createElement("div");
 		day.classList.add("spending__day");
 		day.innerText = `${entry.day}`;
-		barContainer.appendChild(day);
+		bar.appendChild(day);
 	}
 }
 

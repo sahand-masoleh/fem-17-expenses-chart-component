@@ -13,8 +13,10 @@
 
 :root {
 	/* ### primary */
-	--p-soft-red: hsl(10, 79%, 65%);
-	--p-cyan: hsl(186, 34%, 60%);
+	--p-soft-red: rgb(237, 118, 94);
+	--p-soft-red-hover: rgb(237, 118, 94, 0.5);
+	--p-cyan: rgb(118, 181, 188);
+	--p-cyan-hover: rgb(118, 181, 188, 0.5);
 
 	/* ### neutral */
 	--n-dark-brown: hsl(25, 47%, 15%);
@@ -38,6 +40,7 @@ main {
 	flex-direction: column;
 	gap: 1em;
 	margin: 1em;
+	width: min(100% - 2em, 35ch);
 }
 
 /* || FOOTER */

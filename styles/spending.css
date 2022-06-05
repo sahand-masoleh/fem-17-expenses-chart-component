@@ -4,39 +4,70 @@
 }
 
 .spending__title {
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 .spending__hr {
 	border-color: var(--n-very-pale-orange);
+	opacity: 0.5;
 }
 
 /* || SPENDING CHART */
 
 .spending__chart {
+	height: 15em;
 	display: flex;
-	align-content: stretch;
-	height: 10em;
-	justify-content: stretch;
-	gap: 0.5rem;
+	gap: 1ch;
 }
 
 .spending__bar-container {
-	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	align-items: center;
+	flex-grow: 1;
+	margin: 2em 0;
 }
 
 .spending__bar {
 	background-color: var(--p-soft-red);
 	border-radius: 0.2rem;
-	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.spending__bar:hover {
+	background-color: var(--p-soft-red-hover);
+}
+
+.spending__bar:not(:hover) > :first-child {
+	display: none;
 }
 
 .spending__bar--heighest {
 	background-color: var(--p-cyan);
+}
+
+.spending__bar--heighest:hover {
+	background-color: var(--p-cyan-hover);
+}
+
+.spending__amount {
+	position: absolute;
+	top: -3.5ch;
+	padding: 0.5ch 1ch;
+	border-radius: 0.2rem;
+	background-color: var(--n-dark-brown);
+	color: white;
+}
+
+.spending__day {
+	position: absolute;
+	bottom: -2.5ch;
+	color: var(--n-medium-brown);
+	font-size: 0.8em;
 }
 
 /* || SPENDING DETAILS */
